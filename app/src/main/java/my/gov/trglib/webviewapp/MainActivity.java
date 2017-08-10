@@ -3,12 +3,12 @@ package my.gov.trglib.webviewapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.MenuItem;
+//import android.view.Menu;
+//import android.view.MenuItem;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.app.AlertDialog;
+//import android.app.AlertDialog;
 
 public class MainActivity extends AppCompatActivity {
     public WebView view;
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         view = (WebView) this.findViewById(R.id.webView);
         view.getSettings().setJavaScriptEnabled(true);
         view.setWebViewClient(new MyBrowser());
-        view.loadUrl("http://pbt.trglib.gov.my");
+        view.loadUrl("http://pbt.trglib.gov.my/index-login.php");
         view.setWebChromeClient(new WebChromeClient());
     }
 
